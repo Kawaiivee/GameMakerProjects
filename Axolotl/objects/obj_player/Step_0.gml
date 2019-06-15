@@ -67,7 +67,8 @@ if(!place_meeting(x, y + 1, obj_wall)){	//If we are in the air
 else{									//We are standing or running on ground
 	image_speed = 1;					//play the animation at sprite's speed
 	if(h_sp != 0) sprite_index = spr_player_move; else sprite_index = spr_player_still;
-	if(key_down) sprite_index = spr_player_crouch;
+	if(h_sp == 0 && key_down) sprite_index = spr_player_crouch_still;
+	if(h_sp != 0 && key_down) sprite_index = spr_player_crouch_move;
 }
 
 //Face the correct direction using scale to flip

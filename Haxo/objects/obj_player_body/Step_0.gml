@@ -70,6 +70,8 @@ if(!place_meeting(x, y + 1, obj_wall)){	//If we are in the air
 	if(sign(v_sp) > 0) image_index = 1; else image_index = 0;
 	if(sign(v_sp) > 0) obj_player_arms.image_index = 1; else obj_player_arms.image_index = 0;
 }
+
+//Not Airborne
 else if(!crouch){																	//Touching The Ground
 	if(h_sp != 0 && obj_player_arms.equip == "empty"){						//Standing Moving Empty
 		sprite_index = spr_player_move_body;

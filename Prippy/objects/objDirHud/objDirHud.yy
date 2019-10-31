@@ -1,10 +1,19 @@
 {
-    "id": "cef7981d-ff61-4316-9aed-ce223fda763d",
+    "id": "f043752a-55c4-4c18-976b-03bc27f9f7d4",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "animal",
+    "name": "objDirHud",
     "eventList": [
-        
+        {
+            "id": "9abb6b55-fac8-43d5-840c-43ac1d5cf8d5",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "f043752a-55c4-4c18-976b-03bc27f9f7d4"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

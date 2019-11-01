@@ -1,9 +1,8 @@
 /// @description Prippy
 
 //Controls
-randomize();
 //trippy controls
-cheese_acquired = true;
+spd = 32;
 if(cheese_acquired){
 	
 	//shuffle function
@@ -11,7 +10,7 @@ if(cheese_acquired){
 	var temp_1;
 	var swapPos;
 	var i = 0;
-	while(i < 3){
+	while(i < 3 && !idle){
 		swapPos = irandom_range(i+1, array_length_1d(temp_controls_arr)-1);
 		
 		temp_0 = temp_controls_arr[i,0];
@@ -41,8 +40,6 @@ else{
 	
 }
 
-spd = 32;
-
 //Collision with wall code
 //wall left
 if(place_meeting(x-32, y, objWall) && key_left){
@@ -64,10 +61,16 @@ if(place_meeting(x, y+32, objWall) && key_down){
 	spd = 0;
 }
 
-//move prippy's xy position
+//idle, don't need to re-randomize controls
+if(key_right-key_left == 0 and key_down-key_up ==0){
+	idle = true;
+	exit;
+}
+
 if(key_right-key_left != 0 and key_down-key_up !=0){
 	exit;
 }
 
+idle = false;
 x = x + (key_right-key_left)*spd
 y = y + (key_down-key_up)*spd

@@ -8,19 +8,19 @@ if(cheese_acquired){
 	//shuffle function
 	var temp_0;
 	var temp_1;
-	var swapPos;
+	var swap_pos;
 	var i = 0;
 	while(i < 3 && !idle){
-		swapPos = irandom_range(i+1, array_length_1d(temp_controls_arr)-1);
+		swap_pos = irandom_range(i+1, array_length_1d(temp_controls_arr)-1);
 		
 		temp_0 = temp_controls_arr[i,0];
 		temp_1 = temp_controls_arr[i,1];
 		
-		temp_controls_arr[i, 0] = temp_controls_arr[swapPos, 0];
-		temp_controls_arr[i, 1] = temp_controls_arr[swapPos, 1];
+		temp_controls_arr[i, 0] = temp_controls_arr[swap_pos, 0];
+		temp_controls_arr[i, 1] = temp_controls_arr[swap_pos, 1];
 		
-		temp_controls_arr[swapPos, 0] = temp_0;
-		temp_controls_arr[swapPos, 1] = temp_1;
+		temp_controls_arr[swap_pos, 0] = temp_0;
+		temp_controls_arr[swap_pos, 1] = temp_1;
 		i++;
 	}
 	

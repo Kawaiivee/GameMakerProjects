@@ -5,7 +5,7 @@
     "name": "4bf36478-daa1-40b4-92c5-2ddbd7bdd5d7",
     "children": [
         "0917a74f-4117-4a8a-91e4-c4f9550c9f55",
-        "8e5d0737-4b67-4084-8a70-789f698e6a44"
+        "977ead8b-07f2-47b4-973a-d57ca714dc6b"
     ],
     "filterType": "GMSprite",
     "folderName": "prippy",

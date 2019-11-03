@@ -27,6 +27,9 @@ spd = 32;
 //Initially idle
 idle = true;
 
+//everything else relative to zero i guess
+depth = 0;
+
 //Create Hud Instances --LRUD
 instance_create_layer(x-64, y, "Hud", objDirHudLeft);
 instance_create_layer(x+64, y, "Hud", objDirHudRight);

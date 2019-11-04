@@ -10,6 +10,38 @@ if(cheese_acquired){
 	var temp_1;
 	var swap_pos;
 	var i = 0;
+	
+	//Shuffle controls
+	while(i < 3 && !idle){
+		swap_pos = irandom_range(i+1, array_length_1d(temp_controls_arr)-1);
+		
+		temp_0 = temp_controls_arr[i,0];
+		temp_1 = temp_controls_arr[i,1];
+		
+		temp_controls_arr[i, 0] = temp_controls_arr[swap_pos, 0];
+		temp_controls_arr[i, 1] = temp_controls_arr[swap_pos, 1];
+		
+		temp_controls_arr[swap_pos, 0] = temp_0;
+		temp_controls_arr[swap_pos, 1] = temp_1;
+		i++;
+	}
+	
+	//Shuffle controls twice for the hellof it (actually, thiss shuffle is kind of biased)
+	while(i < 3 && !idle){
+		swap_pos = irandom_range(i+1, array_length_1d(temp_controls_arr)-1);
+		
+		temp_0 = temp_controls_arr[i,0];
+		temp_1 = temp_controls_arr[i,1];
+		
+		temp_controls_arr[i, 0] = temp_controls_arr[swap_pos, 0];
+		temp_controls_arr[i, 1] = temp_controls_arr[swap_pos, 1];
+		
+		temp_controls_arr[swap_pos, 0] = temp_0;
+		temp_controls_arr[swap_pos, 1] = temp_1;
+		i++;
+	}
+	
+	//Screww performance, shuffle x 3
 	while(i < 3 && !idle){
 		swap_pos = irandom_range(i+1, array_length_1d(temp_controls_arr)-1);
 		

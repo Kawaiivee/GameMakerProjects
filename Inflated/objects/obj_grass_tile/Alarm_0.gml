@@ -10,6 +10,7 @@ tile_below = place_meeting(x, y+adj, obj_grass_tile);
 tile_left = place_meeting(x-adj, y, obj_grass_tile);
 tile_right = place_meeting(x+adj, y, obj_grass_tile);
 
+//Fully Surrounded
 if(tile_above && tile_below && tile_left && tile_right){
 	tile_id = 5;
 }
@@ -30,6 +31,23 @@ if(tile_above && !tile_below){
 }
 if(!tile_above && tile_below){
 	tile_id -=3;
+}
+
+//Check 3 open area surrounding cases
+if(!tile_above && tile_below && !tile_left && !tile_right){
+	tile_id = 10;
+}
+
+if(!tile_above && !tile_below && !tile_left && tile_right){
+	tile_id = 11;
+}
+
+if(!tile_above && !tile_below && tile_left && !tile_right){
+	tile_id = 12;
+}
+
+if(tile_above && !tile_below && !tile_left && !tile_right){
+	tile_id = 13;
 }
 
 image_index = tile_id-1;

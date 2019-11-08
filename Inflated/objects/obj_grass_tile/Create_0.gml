@@ -1,7 +1,7 @@
 /// @description 1-9 id value
 // Cheat and do this sort of on a call stack from alarm[0] on first frame
 alarm[0] = 1;
-
+visible = false;
 /*image_speed = 0;
 tile_id = 0;
 var adj = 64;

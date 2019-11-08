@@ -1,8 +1,8 @@
 /// @description Assume tiles have min2 adj
-
+visible = true;
 image_speed = 0;
 tile_id = 5;
-var adj = 64;
+var adj = 32;
 
 //check what tiles are around me (2,4,6,8 on keypad)
 tile_above = place_meeting(x, y-adj, obj_grass_tile);
@@ -50,4 +50,18 @@ if(tile_above && !tile_below && !tile_left && !tile_right){
 	tile_id = 13;
 }
 
-image_index = tile_id-1;
+// Tile to right and left 'bridge'
+if(!tile_above && !tile_below && tile_left && tile_right){
+	tile_id = 14;
+}
+
+// Tile to above and below 'pillar'
+if(tile_above && tile_below && !tile_left && !tile_right){
+	tile_id = 15;
+}
+
+//if literally 1 tile island
+if(!tile_above && !tile_below && !tile_left && !tile_right){
+	tile_id = 16;
+}
+image_index = tile_id;

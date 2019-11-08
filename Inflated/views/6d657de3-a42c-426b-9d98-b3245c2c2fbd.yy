@@ -4,10 +4,11 @@
     "mvc": "1.1",
     "name": "6d657de3-a42c-426b-9d98-b3245c2c2fbd",
     "children": [
-        "ac50dd9d-dd17-499f-af77-12554fbe90a3"
+        "ac50dd9d-dd17-499f-af77-12554fbe90a3",
+        "0bb0ad5f-542d-45b2-80ec-4f1b514fe6f4"
     ],
     "filterType": "GMSprite",
-    "folderName": "platforms",
+    "folderName": "tiles",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

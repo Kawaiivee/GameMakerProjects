@@ -1,10 +1,10 @@
 /// @description var init
 air = 100;
-move_spd = 2;
+move_spd = 1;
 jump_spd = 2;
 h_spd = 0;
 v_spd = 0;
-grv_spd = .05;
+grv_spd = .1;
 on_ground = true;
 
 //jump flag timer and sounds

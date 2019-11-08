@@ -1,6 +1,9 @@
 /// @description Controls & Calc Pos
 // You can write your code in this editor
 //alarm[0] makes it so that you can't spam jump inputs too fast
+if(air <= 0){
+	room_restart();
+}
 
 key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
@@ -10,7 +13,14 @@ key_up = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
 var move = key_right - key_left;
 
 //h_spd calc
+if(!on_ground){
+	move_spd = 5;
+}
+else{
+	move_spd = 1;
+}
 h_spd = move * move_spd;
+
 
 //v_spd calc
 if(grv_spd > jump_spd/4){
@@ -52,7 +62,7 @@ if(key_up && can_jump && air > 0){
 	
 	//Lose air
 	air = air - irandom_range(1,5);
-	
+	if(air < 0) air = 0;
 	//physics calc
 	v_spd = -1*jump_spd;
 }

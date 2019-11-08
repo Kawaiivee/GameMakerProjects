@@ -1,4 +1,4 @@
-/// @description Assume tiles have min2 adj
+/// @description Tile sprite arrangement
 visible = true;
 image_speed = 0;
 tile_id = 5;

@@ -13,7 +13,7 @@
     "layers": [
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Instances",
+            "name": "Gui_Hud_Layer",
             "id": "504d83d1-f096-4cf6-bf63-125647443985",
             "depth": 0,
             "grid_x": 32,

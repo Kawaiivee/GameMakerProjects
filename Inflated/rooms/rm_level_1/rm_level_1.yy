@@ -311,7 +311,7 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Hud_Gui_Layer",
+            "name": "Gui_Hud_Layer",
             "id": "8feab94c-93cb-46e1-a8a0-a7ea543f53f3",
             "depth": 100,
             "grid_x": 32,

@@ -170,7 +170,7 @@
             "Key": "584604bb-a367-4778-ac0a-30c15a607037",
             "Value": {
                 "id": "2d27d4e4-5883-44ae-a843-eb4476b39ff7",
-                "resourcePath": "objects\\obj_gui_manager\\obj_gui_manager.yy",
+                "resourcePath": "objects\\obj_gui_level_select\\obj_gui_level_select.yy",
                 "resourceType": "GMObject"
             }
         },

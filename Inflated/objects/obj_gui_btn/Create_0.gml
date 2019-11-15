@@ -1,6 +1,8 @@
 /// @description Button init
-btn_width = 280;
-btn_height = 80;
+
+//MAKE SURE THIS IS NAMED THE SAME IN THE SCRIPT FOR MOUSE HOVERING
+width = 280;
+height = 80;
 
 //text in button
 text = "Button Text";

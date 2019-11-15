@@ -1,9 +1,6 @@
 /// @description Controls & Calc Pos
 // You can write your code in this editor
 //alarm[0] makes it so that you can't spam jump inputs too fast
-if(air <= 0){
-	room_restart();
-}
 
 key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
@@ -14,7 +11,7 @@ var move = key_right - key_left;
 
 //h_spd calc
 if(!on_ground){
-	move_spd = 5;
+	move_spd = 4;
 }
 else{
 	move_spd = 1;
@@ -61,7 +58,7 @@ if(key_up && can_jump && air > 0){
 	alarm[0] = room_speed/4;	//can only jump 4 times per second
 	
 	//Lose air
-	air = air - irandom_range(1,5);
+	air = air - irandom_range(5,7);
 	if(air < 0) air = 0;
 	//physics calc
 	v_spd = -1*jump_spd;
@@ -117,14 +114,34 @@ if(place_meeting(x,y,obj_tile)){
 	}
 }
 
-//move x pos
-x = x + h_spd;
-//Move y pos
-y = y + v_spd;
+if(air > 0){
+	//move x pos
+	x = x + h_spd;
+	//Move y pos
+	y = y + v_spd;
+}
 
 //Sprite changing stuff
 if(on_ground && move != 0) sprite_index = spr_player_move;
-else if(!on_ground) sprite_index = spr_player_air;
+else if(!on_ground){
+	if(v_spd <= 0){
+		sprite_index = spr_player_air;
+	}
+	if(v_spd > 0){
+		sprite_index = spr_player_idle;
+	}
+}
 else sprite_index = spr_player_idle;
+
+if(air <= 0){
+	sprite_index = spr_player_pop;
+	obj_gui_pause.menu_open = true;
+	instance_destroy(obj_camera);
+	image_alpha = image_alpha - .16;
+	if(image_alpha < .01){
+		image_alpha = 1;
+		instance_destroy(obj_player);
+	}
+}
 
 if(h_spd != 0) image_xscale = sign(h_spd);

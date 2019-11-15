@@ -6,6 +6,7 @@ h_spd = 0;
 v_spd = 0;
 grv_spd = .1;
 on_ground = true;
+image_alpha = 1;
 
 //jump flag timer and sounds
 can_jump = true;

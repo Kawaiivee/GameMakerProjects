@@ -22,3 +22,12 @@ view_camera[0] = camera;
 target = obj_player;
 x_to = x;
 y_to = y;
+
+//for clamping camera at edge of room
+view_width_half = camera_get_view_width(camera) * 0.5;
+view_height_half = camera_get_view_height(camera) * 0.5;
+
+//Pan through the level
+zoom_speed = 50;
+still_panning = true;
+alarm[0] = room_speed*2;	//four secconds

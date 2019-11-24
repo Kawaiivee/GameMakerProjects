@@ -50,7 +50,7 @@
             "Key": "0917a74f-4117-4a8a-91e4-c4f9550c9f55",
             "Value": {
                 "id": "8082b9de-d978-4b0a-867d-2500638a4707",
-                "resourcePath": "sprites\\spr_idle\\spr_idle.yy",
+                "resourcePath": "sprites\\spr_prippy\\spr_prippy.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -68,14 +68,6 @@
                 "id": "ebb4cd0d-a77f-422b-af7a-7745f355a76a",
                 "resourcePath": "rooms\\rm_title_demo\\rm_title_demo.yy",
                 "resourceType": "GMRoom"
-            }
-        },
-        {
-            "Key": "0ee25127-74f5-4ca9-bdb2-c18722116bd9",
-            "Value": {
-                "id": "1b52fecd-809e-4d8f-b319-93cf01c091e6",
-                "resourcePath": "objects\\objForegroundTetureController\\objForegroundTetureController.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -276,14 +268,6 @@
                 "id": "dad74d93-83bd-400c-8bb2-7807fa0e9ed1",
                 "resourcePath": "objects\\objDirHudLeft\\objDirHudLeft.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "977ead8b-07f2-47b4-973a-d57ca714dc6b",
-            "Value": {
-                "id": "c183f2a8-1454-4332-a964-4efa8f30ed81",
-                "resourcePath": "sprites\\spr_move\\spr_move.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

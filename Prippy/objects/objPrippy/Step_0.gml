@@ -1,4 +1,4 @@
-/// @description Prippy
+/// @description Prippy controls
 
 //Controls
 //trippy controls

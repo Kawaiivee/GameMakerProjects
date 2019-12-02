@@ -4,9 +4,11 @@
     "mvc": "1.1",
     "name": "19ea6452-d669-4952-935c-04f837da11be",
     "children": [
-        "80a2a109-8345-488f-a176-b591c4757f5d",
-        "7accc8a6-3a87-4c87-b835-86038c76f492",
-        "a7d18d97-ce65-4d75-8d92-d521ceafcad5"
+        "f3fdff74-7bd5-4a80-9f8c-df0a5a698678",
+        "a7d18d97-ce65-4d75-8d92-d521ceafcad5",
+        "2f74620c-8685-404a-8543-d46e0bce673f",
+        "227b07a9-073c-4c34-8299-0aeee164dab4",
+        "8c441962-cf59-4de0-80f6-378fd2f41786"
     ],
     "filterType": "GMObject",
     "folderName": "gui",

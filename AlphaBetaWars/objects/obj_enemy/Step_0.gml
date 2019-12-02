@@ -2,11 +2,22 @@
 // You can write your code in this editor
 
 //make sure enemy stays on sscreen like player
-x = x + irandom_range(-4, -1);
-y = y + irandom_range(-4, 4);
+if(alarm_0_flag){
+	alarm[0] = 0.5*room_speed*irandom_range(1,4);
+	alarm_0_flag = false;
+}
 
-if(x < 0 + .5*sprite_width){
-	x = 0 + .5*sprite_width;
+if(alarm_1_flag){
+	alarm[1] = 0.5*room_speed*irandom_range(1,4);
+	alarm_1_flag = false;
+}
+
+x = x + x_rand;
+y = y + y_rand;
+
+if(x < 0 - sprite_width){
+	
+	instance_destroy();
 }
 
 if(x > room_width - .5*sprite_width){

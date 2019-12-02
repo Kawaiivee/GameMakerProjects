@@ -1,9 +1,10 @@
 /// @description Init Vars HP, State, speeds
-
-hp = 100;
-facing = "right";
-state = "alive";
-move_spd = 4;
+if(room == rm_game || room == rm_boss){
+	x = room_width/2;
+	y = room_height/2;
+}
+move_spd = 6;
+ship_type = "A";
 /*
 States
 	Spawning

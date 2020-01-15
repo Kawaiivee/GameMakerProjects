@@ -37,7 +37,7 @@ if(!crouch && equip == "slingshot"){
 			image_index = 1;
 			speed = 10;										//built in speed var
 			direction = other.image_angle;					//original arms object
-			image_angle = direction
+			image_angle = direction;
 		}
 	}
 	

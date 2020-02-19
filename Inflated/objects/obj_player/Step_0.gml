@@ -58,7 +58,7 @@ if(key_up && can_jump && air > 0){
 	alarm[0] = room_speed/4;	//can only jump 4 times per second
 	
 	//Lose air
-	air = air - irandom_range(5,7);
+	air = air - irandom_range(2,4);
 	if(air < 0) air = 0;
 	//physics calc
 	v_spd = -1*jump_spd;

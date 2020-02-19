@@ -1,8 +1,6 @@
 /// @description Basic Movement For Boy
 key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
-key_down = keyboard_check_pressed(vk_down) ||  keyboard_check_pressed(ord("S"));
-key_up = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
 key_space = keyboard_check_pressed(vk_space);
 
 //blow candle and release balloons
@@ -11,15 +9,16 @@ if(key_space){
 }
 
 var move = key_right - key_left;
+h_spd = move * move_spd;
 
 //Check walls left and right
-if(place_meeting(x+h_spd, y, obj_tile)){
-	while(!place_meeting(x+sign(h_spd), y, obj_tile)){
-		x = x + sign(h_spd);
-	}
-	h_spd = 0;
+if(x > room_width-16){
+	x = 32;
 }
-h_spd = move * move_spd;
+if(x < 16){
+	x = room_width - 32;
+}
+
 x = x + h_spd;
 
 //flip image correctly

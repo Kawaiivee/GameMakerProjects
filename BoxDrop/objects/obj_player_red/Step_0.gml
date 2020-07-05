@@ -1,8 +1,6 @@
-/// @description Insert description here
-//Grab input
-key_1 = keyboard_check(vk_lalt);
-key_2 = keyboard_check(vk_ralt);
+///@description Grab input & Physics
+key = keyboard_check(vk_lcontrol);
 
-if(key_1){
+if(key){
 	x += 1;
 }

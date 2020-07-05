@@ -1,2 +1,2 @@
 /// @description Init State
-var state = "ground";
+state = "ground";

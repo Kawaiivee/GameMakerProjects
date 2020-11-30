@@ -1,0 +1,1 @@
+global.stocks = 0;

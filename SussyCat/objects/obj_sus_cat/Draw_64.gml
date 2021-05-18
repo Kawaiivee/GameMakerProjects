@@ -1,0 +1,1 @@
+draw_sprite_stretched(sprite_index, image_index, 788, 72, 104, 104);

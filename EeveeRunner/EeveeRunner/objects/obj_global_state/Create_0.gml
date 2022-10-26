@@ -1,0 +1,1 @@
+global.left_border = 64;
